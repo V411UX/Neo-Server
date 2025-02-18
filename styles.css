@@ -1,55 +1,64 @@
-/* Estilos generales */
+css
+Copiar
+Editar
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Cabecera */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    font-family: 'VT323', monospace;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 15px;
+    font-size: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Secciones */
-main section {
-    padding: 20px;
-    margin: 20px 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.vallux-title {
+    font-size: 120px; /* Doble de grande */
+    color: #00aaff;
+    text-shadow: 0px 0px 20px #00aaff;
+    font-weight: bold;
+    position: absolute;
+    top: 15%; /* Lo subimos más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.section {
+    background-color: #222;
+    padding: 50px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
